@@ -1,0 +1,84 @@
+{
+  "result": [
+    {
+      "id": 1,
+      "name": "麻糬小廚房",
+      "category": "中式料理",
+      "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrJ6Oil1bDBU6KqZ96vZwboDnyBSugNn2J8QMb5gVLstuea2YIDWnlFzKosz8mQPtEYK1IKOqu5tSYCbsO199bM8slLT70Sx3CXshHoCe20TMUe4uQqvxdlG4iGOjvfcjpX3Nz5mw=w301-h392-p-k-no",
+      "location": "新北市三重區三民街315號1樓",
+      "google_map": "https://maps.app.goo.gl/w5F7RBWKjn6FF3Ks8",
+      "rating": 4.5,
+      "description": "專賣各式美味便當，也有麵食。"
+    },
+    {
+      "id": 2,
+      "name": "馨美食",
+      "category": "越式料理",
+      "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noISNwxyvJ2pJzmkHyg5i9U6FPkGrvZAjjI58zympAtn0FK9BBIqW7YIqAfVgNKiLixuGQWzMEH81kbVYk_AQnXw4A0a_hOJGKtQy2pjfyJV0SXsnAhYLFbqTQmaZEcayW238inBw=w301-h392-p-k-no",
+      "location": "新北市三重區三民街313號",
+      "google_map": "https://maps.app.goo.gl/ZVMLbCV48qCWXabG9",
+      "rating": 4.6,
+      "description": "以牛肉河粉、烤肉飯、生春捲和涼拌木瓜等菜色聞名。"
+    },
+    {
+      "id": 3,
+      "name": "麥當勞",
+      "category": "美式料理",
+      "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrZISAajXcx6TVu8gGWfzPKV1jzWZgJJcoVr1jvETJNssSMFb1opojEhnl87L03TlHc8GVX3JtEaeUBfYZsCyrrBPWAZZIZBHyOAaLVuXx4WDFnc4Pmwa6GpldU6fsK6lRyUd-jpw=w301-h392-p-k-no",
+      "location": "新北市三重區中正北路193巷45號1F",
+      "google_map": "https://maps.app.goo.gl/UqLks3L1HPA2mEZ58",
+      "rating": 3.7,
+      "description": "老字號的經典連鎖速食店，以漢堡和薯條聞名。"
+    },
+    {
+      "id": 4,
+      "name": "薩莉亞",
+      "category": "義式料理",
+      "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrwzIHYzoiRGFZ-mCph2D5usoSNxOKPnwjRA8zwTxkWN8pDlAUw8mPyJLz2mHUCnBIHxeRbnnFuwq_oMH6duotQ1tECWz7C8BG0GtQjHvBEQirBLPtElM9Z7duowe2B7NlU01xX=w301-h392-p-k-no",
+      "location": "241新北市三重區中正北路193巷45號",
+      "google_map": "https://maps.app.goo.gl/5hso4JN6pbTsnrm1A",
+      "rating": 4.0,
+      "description": "來自日本的義式料理，以「貨真價實卻便宜的料理」為目標。"
+    },
+    {
+      "id": 5,
+      "name": "斯丹蔓精品咖啡",
+      "category": "咖啡輕食",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipPOGQMvu93h2QCVnxSSDWi5FAg4MgbkXA3rcl-c=w301-h392-p-k-no",
+      "location": "新北市三重區三民街307號1樓",
+      "google_map": "https://maps.app.goo.gl/cQZB1gqZ2UQtAhxT8",
+      "rating": 4.9,
+      "description": "義式咖啡☕️、精品手沖、法國進口香料茶🇫🇷鬆餅🧇、炸物、商業簡餐，闆娘手工甜點🍮蛋糕🍰餅乾🍪！"
+    },
+    {
+      "id": 6,
+      "name": "FOUND LOVE",
+      "category": "早午餐",
+      "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nptTA4nozrXlCQV3_OEotxPd7e0elTxqF5ZuG7KspZnrOYafxK8qvVx1_Y_7lfw1R9__XsjdbX2JgZp7sh8b0nzAmtGJhG93fMiSe2Z5TfH6R7L6RNHGYhIUsmOHPekddpOUWsc=w301-h392-p-k-no",
+      "location": "新北市三重區中正北路302號1樓",
+      "google_map": "https://maps.app.goo.gl/rq1mpGLpyvQACoJQ8",
+      "rating": 4.7,
+      "description": "提供網紅早午餐、咖啡輕食和鬆餅。"
+    },
+    {
+      "id": 7,
+      "name": "鬼匠拉麵",
+      "category": "日式料理",
+      "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npz4mkWEEPWsdeRyhIzFly1spKp7sfnrl-aGMTj2H_ge91wkhxa1GpASBAEcOsRPca9tNooSXr8dlZn4bGoyetatWF0wBfJMi5sqzKT7J1uvFWD8xnPKYJupH9ZziEd9HwHgbuz=w301-h392-p-k-no",
+      "location": "新北市三重區中正北路276巷10號",
+      "google_map": "https://maps.app.goo.gl/y54TchuYzLzwjGWz6",
+      "rating": 4.0,
+      "description": "一家專門提供豐富多樣的拉麵料理的餐廳，這裡的招牌菜包括鬼匠豚骨拉麵、溏心蛋、黃金豬排和叉燒肉。"
+    },
+    {
+      "id": 8,
+      "name": "大有牛肉麵",
+      "category": "中式料理",
+      "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrSb4vMTlnreYnR0unZoDJ4BvT_sMGulOvhsilCuYUn5dPlSMplShzbirOXSA-iPwOG2cdjTrvMBGX9iGGXHvvlvjW_AKCsHkuTRPc34DKNJ3S3tqUHZht8n3FJweL7h8M67TM=w301-h392-p-k-no",
+      "location": "新北市三重區中正北路380巷9號",
+      "google_map": "https://maps.app.goo.gl/g9AJ5HWfqPHUSctW8",
+      "rating": 4.1,
+      "description": "提供各式熱炒和麵食，炒飯必點！"
+    }
+  ]
+}
