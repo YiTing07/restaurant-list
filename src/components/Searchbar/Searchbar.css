@@ -1,0 +1,13 @@
+.searchbar {
+  display: flex;
+  justify-content: center;
+  height: 3em;
+}
+
+form {
+  width: 40%;
+}
+
+.btn {
+  background-color: #FFFFFF
+}
