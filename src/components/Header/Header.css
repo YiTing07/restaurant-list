@@ -1,0 +1,15 @@
+.navbar {
+  background-color: #dddddd;
+  opacity: 0.8;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.banner {
+  position: relative;
+  z-index: -1;
+  margin: -5px;
+  height: 360px;
+  background: #dddddd center center;
+  background-size: cover;
+  filter: blur(3px);
+}
