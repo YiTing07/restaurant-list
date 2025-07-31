@@ -1,0 +1,14 @@
+.modal-body {
+  padding: 1.5em;
+}
+
+.poster img {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+
+.restaurant-info h2, p {
+  margin-bottom: 1em;
+}
+
