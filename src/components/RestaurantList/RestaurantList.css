@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.data-panel {
+  width: 100%;
+}
+
+.restaurant-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  margin-bottom: 1.75em;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  line-height: 1.5em;
+}
+
+.rating {
+  padding: 1px 5px;
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+}
+
+.fv-btn {
+  padding: 12px;
+}
+
+button {
+  float: right;
+}
