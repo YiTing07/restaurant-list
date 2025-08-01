@@ -10,5 +10,6 @@
 
 .restaurant-info h2, p {
   margin-bottom: 1em;
+  line-height: 1.5em;
 }
 

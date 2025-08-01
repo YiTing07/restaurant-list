@@ -1,14 +1,27 @@
 import './RestaurantList.css'
 import restaurants from '../../assets/jsons/restaurants.json';
 import RestaurantModal from '../RestaurantModal/RestaurantModal';
+import Pagination from '../Pagination/Pagination';
 
 import { useState } from 'react';
 
+const restaurantPerPage = 8;
+
 export default function RestaurantList() {
   const [selectRestaurant, setSelectedRestaurant] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+
+  //計算分頁資料
+  const startIndex = (currentPage - 1) * restaurantPerPage;
+  const endIndex = startIndex + restaurantPerPage;
+  const paginatedRestaurants = restaurants.slice(startIndex, endIndex);
 
   function handleClick(item) {
     setSelectedRestaurant(item)
+  }
+
+  function handlePageChange(page) {
+    setCurrentPage(page)
   }
 
   return (
@@ -17,7 +30,7 @@ export default function RestaurantList() {
         <div className="data-panel">
           <h2 className="my-3">熱門餐廳</h2>
           <div className="restaurant-list">
-            {restaurants.map((item) => (
+            {paginatedRestaurants.map((item) => (
               <div className="card" key={item.id}>
                 <img
                   className="card-img-top"
@@ -39,6 +52,11 @@ export default function RestaurantList() {
             ))}
           </div>
         </div>
+
+        <Pagination
+          currentPage={currentPage}
+          onPageChange={handlePageChange}
+        />
       </div>
 
       <RestaurantModal selectRestaurant={selectRestaurant} />

@@ -78,5 +78,45 @@
     "google_map": "https://maps.app.goo.gl/g9AJ5HWfqPHUSctW8",
     "rating": 4.1,
     "description": "提供各式熱炒和麵食，炒飯必點！"
+  },
+  {
+    "id": 9,
+    "name": "永春上海湯包",
+    "category": "中式料理",
+    "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrECWJV_8qPO1v7JeYpQZrP9vyMeKUAjZAQm5NjtYpxX4VZ3-zB0FEe6-ZhAaagisBcuCl9KhD_naK7ILYpzVmTVjF_CjZlDSByLFxeW5A8pI_EfGW1PPycJivOyn1vqB3SQ_-3=w301-h392-p-k-no",
+    "location": "新北市三重區力行路一段201號",
+    "google_map": "https://maps.app.goo.gl/1Kdxr3TPru5Xo9fV6",
+    "rating": 4.0,
+    "description": "提供各式熱炒和麵食，經典招牌是小籠湯包和大餅捲牛！"
+  },
+  {
+    "id": 10,
+    "name": "晨十咖哩",
+    "category": "日式咖哩",
+    "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nogtBdH8fOE0wIvY44fgfPx5weXDgy01_O9PXHXpSqbuB_STrQAc0Xt0pK3-30rs1y0XYs7_xvFcZidDhkQYjG9zeUQMvxs6diWv86S1AKoiUfzxHJutDObD-WoJcSlB6FNeQTgjA=w301-h392-p-k-no",
+    "location": "新北市三重區重新路四段33號1樓",
+    "google_map": "https://maps.app.goo.gl/rFymKNAYLRfXAEMDA",
+    "rating": 4.6,
+    "description": "提供老闆獨門美味炸物➕特製熟成咖哩，只能說太美味啦👍"
+  },
+  {
+    "id": 11,
+    "name": "豐滿早午餐",
+    "category": "早午餐",
+    "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4no_M0_VoEnHhS1UvLsbsYoAXjRwc020mpjFS1U9a15icj8bUCqVtUc2KaaEfD3_sBPj75iIdwbTeZhtZIoVNvyn-PNpaaIPuW4feE2WPcnbPJMnma_8tqN8H2VEo4e5wLJWxDFD=w301-h392-p-k-no",
+    "location": "新北市三重區大榮街8號",
+    "google_map": "https://maps.app.goo.gl/VoaMk5q36mdSGKNN7",
+    "rating": 4.2,
+    "description": "有多樣選擇的豐盛早午餐，也有提供正餐麵飯類。"
+  },
+  {
+    "id": 12,
+    "name": "鹿之森日式厚鬆餅",
+    "category": "咖啡輕食",
+    "image": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrABaqxpGkwvPEEVy2j9VopsSVI-uBMplPQYrcXgs3Zc4yUztp4-j7tHsZgUoJEpyY105NzorqksAuyn9Xh5gnEKy3BmO53FnWhkZCf5RJzNvXru6tCwiCBnVee42Ng4ADfw1g=w301-h392-p-k-no",
+    "location": "新北市三重區重新路四段184巷25弄6號",
+    "google_map": "https://maps.app.goo.gl/TzQyWyrQ9jskAnQv7",
+    "rating": 4.4,
+    "description": "是一家專門提供甜點的餐廳。這裡最受歡迎的美食包括焦糖原味舒芙蕾、舒芙蕾套餐以及鹿野紅烏龍茶舒芙蕾，而手工焦糖布丁也頗受顧客喜愛。"
   }
 ]
