@@ -1,24 +1,24 @@
 import './Pagination.css';
 import restaurants from '../../assets/jsons/restaurants.json';
 
-export default function Pagination({currentPage, onPageChange}) {
+export default function Pagination({ currentPage, onPageChange }) {
   const restaurantPerPage = 8;
   const pages = Math.ceil(restaurants.length / restaurantPerPage)
   const pageNumbers = [];
 
-  for(let i = 1; i <= pages; i++) {
+  for (let i = 1; i <= pages; i++) {
     pageNumbers.push(i);
   }
 
   return (
-    <nav aria-label="Page navigation">
+    <nav className="pagination-container" aria-label="Page navigation">
       <ul className="pagination pagination-lg">
         <li className="page-item">
           <button
-            className="page-link" 
+            className="page-link"
             aria-label="Previous"
             onClick={() => onPageChange(currentPage - 1)}
-            disabled={currentPage === 1}  
+            disabled={currentPage === 1}
           >
             <span aria-hidden="true">&laquo;</span>
           </button>
@@ -34,13 +34,13 @@ export default function Pagination({currentPage, onPageChange}) {
             </button>
           </li>
         ))}
-        
+
         <li className="page-item">
-          <button 
+          <button
             className="page-link"
             aria-label="Next"
             onClick={() => onPageChange(currentPage + 1)}
-            disabled={currentPage === pages}  
+            disabled={currentPage === pages}
           >
             <span aria-hidden="true">&raquo;</span>
           </button>
