@@ -2,6 +2,7 @@
   display: grid;
   gap: 1.25rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-bottom: 2.5em;
 }
 
 .card {
@@ -61,3 +62,18 @@
 .no-result p {
   margin-bottom: 0.5rem;
 }
+
+.text-muted {
+  color: #999 !important;
+}
+
+@media (max-width: 768px) {
+  .restaurant-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+} 
