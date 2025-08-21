@@ -23,20 +23,12 @@
 
 ### 安裝與啟動
 ```bash
-<<<<<<< HEAD
 git clone https://github.com/YiTing07/restaurant-list.git
-=======
-git clone <your-repo-url>
->>>>>>> 7bfd60d (feat: add README.md)
 cd restaurant-list
 npm install
 npm start
 ```
 
-<<<<<<< HEAD
-=======
-- 開發伺服器預設埠為 `http://localhost:3000`。
->>>>>>> 7bfd60d (feat: add README.md)
 - 產生正式版建置：
 ```bash
 npm run build
@@ -126,11 +118,7 @@ npm run eject  # 彈出 CRA 設定（不可逆）
 
 ## 授權
 
-<<<<<<< HEAD
 未特別指定，預設以學習與示範用途為主。
-=======
-未特別指定，預設以學習與示範用途為主。若需加入授權條款，請在此補充。
->>>>>>> 7bfd60d (feat: add README.md)
 
 ---
 
