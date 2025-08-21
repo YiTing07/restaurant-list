@@ -1,21 +1,16 @@
 import '../components/RestaurantList/RestaurantList.css';
-import { useState} from 'react';
+import { useState } from 'react';
+import { useFavorites } from '../context/FavoritesContext'
 import Header from '../components/Header/Header';
 import RestaurantModal from '../components/RestaurantModal/RestaurantModal';
 
 
 export default function Favorite() {
-  const [favoriteList, setFavoriteList] = useState([]);
   const [selectRestaurant, setSelectedRestaurant] = useState("");
-
+  const { favoriteList, toggleFavorite } = useFavorites();
 
   function handleClick(item) {
     setSelectedRestaurant(item);
-  }
-
-  function handleRemoveFavorite(id) {
-    const updatedFavorites = favoriteList.filter((item) => item.id !== id);
-    setFavoriteList(updatedFavorites);
   }
 
   return (
@@ -45,7 +40,7 @@ export default function Favorite() {
                     <button
                       type="button"
                       className="btn btn-outline-danger btn-sm"
-                      onClick={() => handleRemoveFavorite(item.id)}
+                      onClick={() => toggleFavorite(item)}
                     >
                       移除收藏 <i className="bi bi-heart-fill"></i>
                     </button>

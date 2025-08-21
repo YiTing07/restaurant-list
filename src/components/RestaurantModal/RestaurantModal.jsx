@@ -26,10 +26,6 @@ export default function RestaurantModal({ selectRestaurant }) {
               <p className="description">介紹：{selectRestaurant.description}</p>
             </div>
           </div>
-          <div className="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">離開</button>
-            <button type="button" class="btn btn-outline-danger">收藏</button>
-          </div>
         </div>
       </div>
     </div>
