@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+## Restaurant List 餐廳清單
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+一個以 React 打造的餐廳清單與收藏應用。支援關鍵字搜尋、分頁瀏覽、收藏清單與餐廳詳細資訊 Modal，收藏資料透過 `localStorage` 保存。UI 採用 Bootstrap 5 與 Bootstrap Icons，路由採用 React Router。
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 功能特色
 
-### `npm start`
+- **關鍵字搜尋**：可依餐廳「名稱」或「類別」搜尋（不分大小寫）。
+- **分頁瀏覽**：每頁顯示 8 筆餐廳卡片。
+- **收藏清單**：一鍵加入/移除收藏，於 `Favorite` 頁集中檢視與管理，資料存於 `localStorage`。
+- **詳細資訊 Modal**：點擊餐廳圖片可開啟 Modal，查看圖片、類別、地址、描述等資訊。
+- **導覽列與橫幅**：提供首頁與收藏頁導覽，並顯示橫幅圖。
+- **純前端專案**：資料來源為 `src/assets/jsons/restaurants.json`。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 快速開始
 
-### `npm test`
+### 需求
+- Node.js 18+（建議）
+- npm 9+（或使用 pnpm/yarn 亦可自行調整）
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 安裝與啟動
+```bash
+<<<<<<< HEAD
+git clone https://github.com/YiTing07/restaurant-list.git
+=======
+git clone <your-repo-url>
+>>>>>>> 7bfd60d (feat: add README.md)
+cd restaurant-list
+npm install
+npm start
+```
 
-### `npm run build`
+<<<<<<< HEAD
+=======
+- 開發伺服器預設埠為 `http://localhost:3000`。
+>>>>>>> 7bfd60d (feat: add README.md)
+- 產生正式版建置：
+```bash
+npm run build
+```
+- 執行測試：
+```bash
+npm test
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> 本專案以 Create React App（`react-scripts`）建立與建置。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 專案結構
+```text
+restaurant-list/
+  public/
+  src/
+    assets/
+      images/
+      jsons/
+        restaurants.json        # 餐廳資料（示例資料）
+    components/
+      Header/
+      Pagination/
+      RestaurantList/
+      RestaurantModal/
+      Searchbar/
+    context/
+      FavoritesContext.jsx      # 收藏清單 Context，含 localStorage 同步
+    pages/
+      Home.jsx                  # 首頁（搜尋 + 餐廳清單）
+      Favorite.jsx              # 收藏頁（顯示/移除收藏）
+    App.js                      # 路由配置與 Context Provider
+    index.js                    # 入口，載入 Bootstrap 與樣式
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 主要技術
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React 19**（`react`, `react-dom`）
+- **React Router DOM 7**（路由）
+- **Bootstrap 5、Bootstrap Icons**（UI 樣式與圖示）
+- **Context API + localStorage**（收藏清單狀態與永續化）
+- **Create React App（react-scripts）**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 重要路由與元件
 
-## Learn More
+- **路由**（見 `src/App.js`）
+  - `/`：首頁 `Home`
+  - `/favorite`：收藏頁 `Favorite`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **`Header`**：頂部導覽列與橫幅，提供 Home / Favorite 導覽。
+- **`Searchbar`**：受控式輸入欄位與搜尋按鈕（按下按鈕觸發搜尋）。
+- **`RestaurantList`**：
+  - 分頁顯示餐廳卡片（每頁 8 筆）。
+  - 收藏按鈕（整合 `FavoritesContext`）。
+  - 點擊圖片開啟 **`RestaurantModal`**。
+- **`RestaurantModal`**：顯示餐廳名稱、類別、地址、描述與圖片。
+- **`Pagination`**：切換頁碼的 UI 元件。
+- **`FavoritesContext`**：提供 `favoriteList` 與 `toggleFavorite`，並在變更時同步至 `localStorage`。
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 使用說明
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. 進入首頁後，在搜尋框輸入餐廳名稱或類別關鍵字，按下搜尋按鈕。
+2. 點擊餐廳卡片圖片可查看詳細資訊 Modal。
+3. 點擊「收藏/已收藏」按鈕切換收藏狀態。
+4. 於導覽列進入 `Favorite` 頁面查看或移除收藏的餐廳。
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 指令一覽（Scripts）
 
-### Making a Progressive Web App
+```bash
+npm start   # 啟動開發伺服器
+npm test    # 啟動測試（watch 模式）
+npm run build  # 產生正式版建置輸出到 build/
+npm run eject  # 彈出 CRA 設定（不可逆）
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 授權
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<<<<<<< HEAD
+未特別指定，預設以學習與示範用途為主。
+=======
+未特別指定，預設以學習與示範用途為主。若需加入授權條款，請在此補充。
+>>>>>>> 7bfd60d (feat: add README.md)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+歡迎提交 Issue 或 Pull Request，一起改進功能與使用體驗。
